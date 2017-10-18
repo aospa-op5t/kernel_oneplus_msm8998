@@ -6264,7 +6264,7 @@ void checkout_term_current(struct smb_charger *chg, int batt_temp)
 }
 
 /* xianglin add for usb enum at first bootup */
-static int usb_enum_check(const char *val, struct kernel_param *kp)
+static int usb_enum_check(const char *val, const struct kernel_param *kp)
 {
 	const struct apsd_result *apsd_result;
 	unsigned long usb_sw_reset = 0;
